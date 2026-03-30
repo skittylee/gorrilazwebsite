@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background: #e6e6e6;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, cursive;
+}
+
+.hero {
+    background: url("https://raw.githubusercontent.com/skittylee/GitHubProject/refs/heads/main/hero.jpg") center top/cover no-repeat;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    clip-path: inset(0 0 20% 0);
+
+    
+    margin-bottom: -100px;
+}
+
+.hero h1 {
+    color: orange;
+    font-size: 60px;
+    text-shadow: 3px 3px black;
+}
+
+.section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.section-right {
+    margin-left: auto;
+    margin-right: 40px;       
+    text-align: right;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.album {
+    text-align: center;
+}
+
+.album img {
+    width: 200px;
+    border: 5px solid black;
+}
+
+.center {
+    text-align: center;
+}
+.side-image-container {
+    display: flex;
+    justify-content: flex-end; 
+    padding-right: 40px;        
+    margin-top: 20px;          
+    margin-bottom: 20px;        
+}
+
+.side-image {
+    width: 200px;               
+    height: 250px;             
+    object-fit: contain;         
+}
+.grid .album:last-child {
+    grid-column: 1 / -1;
+    text-align: center;
+}
